@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techlelis | Criação de Sites e Consultoria Online</title>
+    <style>
+        /* Estilos Globais e Paleta de Cores */
+        :root {
+            --bg-dark: #0F172A;
+            --card-bg: #1E293B;
+            --accent-green: #25D366;
+            --accent-green-hover: #1ebd59;
+            --text-light: #F8FAFC;
+            --text-muted: #94A3B8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Cabeçalho / Hero Section */
+        header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-green);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        /* Botão Principal CTA */
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--accent-green);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--accent-green-hover);
+            transform: translateY(-3px);
+        }
+
+        /* Seção de Serviços */
+        .services {
+            padding: 60px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--accent-green);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Rodapé e Cobertura */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade para Celulares */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            p.subtitle { font-size: 1rem; }
+            .btn-whatsapp { font-size: 1rem; width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <div class="logo">TECH<span>LELIS</span></div>
+        <h1>Criamos o seu site com dinamismo e alta conversão</h1>
+        <p class="subtitle">Aumente as vendas da sua empresa com um site rápido, moderno e totalmente integrado ao seu WhatsApp e QR Code exclusivo.</p>
+        
+        <a href="https://wa.me/5511916650753?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="btn-whatsapp" target="_blank">
+            💬 Pedir meu site no WhatsApp
+        </a>
+    </header>
+
+    <section class="services container">
+        <h2 style="text-align: center; font-size: 2rem;">O que oferecemos para o seu negócio</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🌐 Criação de Sites</h3>
+                <p>Desenvolvemos seu site com visual moderno, rápido e com a personalidade da sua marca para passar autoridade total.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Conexão WhatsApp & QR Code</h3>
+                <p>Sites com integração direta ao seu WhatsApp e QR Code exclusivo para você não perder nenhuma oportunidade de venda.</p>
+            </div>
+            <div class="card">
+                <h3>🚀 Presença Online</h3>
+                <p>Estratégia e direcionamento para colocar sua empresa com destaque nas buscas da sua região.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>Techlelis - Consultoria Online</strong></p>
+            <p>Atendimento online para São Paulo (Barra Funda, Brás), Manaus e todo o Brasil.</p>
+            <p style="margin-top: 10px;">Contato: (11) 91665-0753</p>
+        </div>
+    </footer>
+
+</body>
+</html>
